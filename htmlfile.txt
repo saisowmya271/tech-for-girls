@@ -1,0 +1,60 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <div class="header-image">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/3580f4b8-96ae-4dd0-ab4e-33f1f122323e.png" alt="Tech For Girls Community Banner" class="banner-img">
+        </div>
+        <h1>Tech For Girls Registration</h1>
+        <form id="registrationForm">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" id="name" required>
+            </div>
+            <div class="form-group">
+                <label for="phone">Phone Number:</label>
+                <input type="number" id="phone" required>
+            </div>
+            <div class="form-group">
+                <label for="email">Email ID:</label>
+                <input type="email" id="email" required>
+            </div>
+            <div class="form-group">
+                <label for="college">College/Department:</label>
+                <input type="text" id="college" required>
+            </div>
+            <div class="form-group">
+                <label for="screenshot">Upload Screenshot:</label>
+                <input type="file" id="screenshot" accept="image/*" required>
+            </div>
+            <div class="share-section">
+                <button type="button" id="whatsappButton">
+                    <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/4040fa9c-2b0d-4a98-9bf2-04cddaf870d4.png" alt="WhatsApp share button icon">
+                    Share on WhatsApp
+                </button>
+                <div class="progress-container">
+                    <div class="progress-bar" id="progressBar"></div>
+                    <p id="clickCount">0/5 shares completed</p>
+                </div>
+            </div>
+            <button type="submit" id="submitButton" disabled class="submit-btn">
+                <span class="spinner hidden" id="spinner"></span>
+                Submit Registration
+            </button>
+        </form>
+        <div id="submissionMessage" class="message-box hidden">
+            <img src="https://storage.googleapis.com/workspace-0f70711f-8b4e-4d94-86f1-2a93ccde5887/image/cd870cbb-247e-4ce8-8083-ed2b9522c6e8.png" alt="Registration success confirmation icon">
+            <p>🎉 Your submission has been recorded. Thanks for being part of Tech for Girls!</p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+```

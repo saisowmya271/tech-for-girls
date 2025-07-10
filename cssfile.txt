@@ -1,0 +1,84 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 20px;
+}
+.container {
+    max-width: 600px;
+    margin: auto;
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+.header-image {
+    text-align: center;
+}
+.banner-img {
+    max-width: 100%;
+    height: auto;
+}
+h1 {
+    text-align: center;
+    color: #333;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+input[type="text"],
+input[type="tel"],
+input[type="email"],
+input[type="file"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+.share-section {
+    margin-top: 20px;
+    text-alig.share-section {
+    margin-top: 20px;
+    text-align: center;
+}
+#whatsappButton {
+    background-color: #25D366;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#whatsappButton img {
+    vertical-align: middle;
+    margin-right: 5px;
+}
+.progress-container {
+    margin-top: 10px;
+}
+.progress-bar {
+    width: 0;
+    height: 10px;
+    background-color: #4CAF50;
+    border-radius: 5px;
+}
+.submit-btn {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    width: 100%;
+}
+.message-box {
+    text-align: center;
+    margin-top: 20px;
+}
+.hidden {
+    display: none;
+}

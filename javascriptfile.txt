@@ -1,0 +1,28 @@
+document.addEventListener("DOMContentLoaded", function() {
+    const whatsappButton = document.getElementById("whatsappButton");
+    const clickCountDisplay = document.getElementById("clickCount");
+    const progressBar = document.getElementById("progressBar");
+    const submitButton = document.getElementById("submitButton");
+    const registrationForm = document.getElementById("registrationForm");
+    const submissionMessage = document.getElementById("submissionMessage");
+    let shareCount = 0;
+    whatsappButton.addEventListener("click", function() {
+        if (shareCount < 5) {
+            shareCount++;
+            clickCountDisplay.textContent = `${shareCount}/5 shares completed`;
+            progressBar.style.width = `${(shareCount / 5) * 100}%`;
+            if (shareCount === 5) {
+                submitButton.disabled = false;
+            }
+        }
+    });
+    registrationForm.addEventListener("submit", function(event) {
+        event.preventDefault();
+        submissionMessage.classList.remove("hidden");
+        registrationForm.reset();
+        shareCount = 0;
+        clickCountDisplay.textContent = `0/5 shares completed`;
+        progressBar.style.width = `0%`;
+        submitButton.disabled = true;
+    });
+});
